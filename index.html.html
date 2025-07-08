@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RetentionEdge | Stop Losing Viewers in Your Tech Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#dc2626",
+            secondary: "#0a0a0a",
+            accent: "#171717"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .stat-highlight {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .stat-highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -0.25rem;
+      right: -0.25rem;
+      height: 35%;
+      background-color: rgba(220, 38, 38, 0.2);
+      z-index: -1;
+      border-radius: 2px;
+    }
+    
+    .shadow-gradient {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .hook-card {
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .hook-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    .pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .grid-stagger > *:nth-child(2) { animation-delay: 0.1s; }
+    .grid-stagger > *:nth-child(3) { animation-delay: 0.2s; }
+    .grid-stagger > *:nth-child(4) { animation-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-white text-secondary font-sans">
+  <!-- Sticky Nav -->
+  <nav class="sticky top-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <span class="text-xl font-bold">Retention<span class="text-primary">Edge</span></span>
+        </div>
+        <div>
+          <a href="#offer" class="bg-primary hover:bg-red-700 text-white px-5 py-2.5 rounded-md font-semibold transition-colors">
+            Claim Free Analysis
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO: URGENT PAIN POINT -->
+  <section class="pt-16 pb-24 px-4 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6 fade-in">
+         Hardware Review Script Specialist
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight max-w-3xl mx-auto">
+         Your Tech Reviews Drop 
+        <span class="text-primary block mt-3">41% of Viewers in First 90 Seconds!</span>
+      </h1>
+      <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+        I write scripts with engaging hooks, which viewers enjoy watching, and are designed with a retention-optimized structure.
+
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#process" class="bg-primary hover:bg-red-700 text-white px-8 py-4 font-bold rounded-md transition-colors shadow-gradient">
+          Fix Your Retention Leaks ↓
+        </a>
+        <a href="#samples" class="bg-secondary hover:bg-gray-800 text-white px-8 py-4 font-bold rounded-md transition-colors">
+          See Script Samples →
+        </a>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl font-extrabold text-primary">23.7%</div>
+          <div class="text-sm text-gray-600 mt-1">Avg.Retention Boost</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-extrabold text-primary">83%</div>
+          <div class="text-sm text-gray-600 mt-1">Avg.ClickThroughRate</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-extrabold text-primary">15.3%</div>
+          <div class="text-sm text-gray-600 mt-1">Avg.CTR Increase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS: RETENTION ENGINEERING -->
+  <section id="process" class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold">The Retention Optimization System</h2>
+        <p class="mt-4 text-gray-600">Framework system that transforms viewer drop-off into Binge-watching and Conversions!</p>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 grid-stagger">
+        <!-- STEP 1 -->
+        <div class="bg-white rounded-xl p-7 border border-gray-200 shadow-gradient fade-in">
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold text-xl">1</span>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Structure Simplified</h3>
+          </div>
+          
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+              <span>Pinpoint every engagement dip, decode the why, and keep them locked in.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Analyze the best. Outshine them with a smarter, sharper content strategy method.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Spot the moments your visuals and script fall out of sync, and fix the mismatch.</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+            <p class="text-sm font-medium text-gray-600">Real Example:</p>
+            <p class="mt-2 text-gray-800 italic">"Found 38% of viewers left at 1:15 - fixed by adding visuals to explain technical specs"</p>
+          </div>
+        </div>
+        
+        <!-- STEP 2 -->
+        <div class="bg-white rounded-xl p-7 border border-gray-200 shadow-gradient fade-in">
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold text-xl">2</span>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Hooks Craftsmanship</h3>
+          </div>
+          
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>First 3 seconds that grab attention immediately.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Intriguing openings that make viewers stay.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Sponsor reads that feel natural and authentic.</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6 space-y-4">
+            <div class="p-4 bg-red-50 rounded-lg border border-red-100">
+              <p class="text-sm font-medium text-gray-600">Weak Hook:</p>
+              <p class="mt-1 text-gray-800 italic">"Hello everyone, today we're unboxing the Samsung Galaxy S25!"</p>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg border border-green-100">
+              <p class="text-sm font-medium text-gray-600">Retention Optimized Hook:</p>
+              <p class="mt-1 text-gray-800 italic">"Samsung's thinnest phone just snapped in my pocket. (Show diff bent phone) This $1,300 'innovation' might cost you more than money"</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- STEP 3 -->
+        <div class="bg-white rounded-xl p-7 border border-gray-200 shadow-gradient fade-in">
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <span class="text-primary font-bold text-xl">3</span>
+            </div>
+            <h3 class="ml-4 text-xl font-bold">Build with Precision</h3>
+          </div>
+          
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Present specs with visuals that keep viewers engaged.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Sponsor placements viewers actually watch and enjoy.</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="mt-1 mr-3 text-primary flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Affiliate CTAs that actually convert.</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+            <p class="text-sm font-medium text-gray-600">Real Result:</p>
+            <p class="mt-2 text-gray-800 italic">"Moved thermal tests after sponsor read - viewers watched 22% more of sponsor content"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPTS THAT CONVERT -->
+  <section id="samples" class="py-20 px-4 bg-accent text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Goldmine Script Samples!</h2>
+        <p class="mt-4 text-gray-300">Proven hooks that keep viewers tuned</p>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- SAMPLE 1 -->
+        <div class="bg-gray-800 rounded-xl p-7 border border-gray-700 shadow-gradient hook-card">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-xl text-primary">Smartphone Review Hook</h3>
+          </div>
+          <div class="mt-5 font-mono text-sm text-gray-200 bg-gray-900 p-5 rounded-lg">
+            <span class="block text-gray-400">[0:00-0:08]</span>
+            <span class="block mt-2">(UPBEAT MUSIC STOPS ABRUPTLY)</span>
+            <span class="block">(CLOSE UP: PHONE BENDING)</span>
+            <span class="block mt-2">VO: "Samsung's thinnest phone just failed my pocket test. (REVEAL BEND) This $1,300 'innovation' might cost you more than money."</span>
+          </div>
+          <div class="mt-5 pt-5 border-t border-gray-700">
+            <p class="text-gray-400 text-sm"><span class="font-medium">Why it works:</span> Immediate visual proof of a problem viewers care about</p>
+          </div>
+        </div>
+        
+        <!-- SAMPLE 2 -->
+        <div class="bg-gray-800 rounded-xl p-7 border border-gray-700 shadow-gradient hook-card">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-xl text-primary">Sponsor Integration</h3>
+          </div>
+          <div class="mt-5 font-mono text-sm text-gray-200 bg-gray-900 p-5 rounded-lg">
+            <span class="block text-gray-400">[3:10-3:25]</span>
+            <span class="block mt-2">(MUSIC SHIFT: UPBEAT TECH)</span>
+            <span class="block">VO: "Before we test thermals - today's sponsor, Squarespace. (B-ROLL: WEBSITE BUILDER)</span>
+            <span class="block mt-2">Just like this GPU needs cooling, your business needs a foundation that doesn't throttle under pressure..."</span>
+          </div>
+          <div class="mt-5 pt-5 border-t border-gray-700">
+            <p class="text-gray-400 text-sm"><span class="font-medium">Why it works:</span> Natural transition that maintains viewer interest</p>
+          </div>
+        </div>
+        
+        <!-- SAMPLE 3 -->
+        <div class="bg-gray-800 rounded-xl p-7 border border-gray-700 shadow-gradient hook-card">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-xl text-primary">Affiliate CTA</h3>
+          </div>
+          <div class="mt-5 font-mono text-sm text-gray-200 bg-gray-900 p-5 rounded-lg">
+            <span class="block text-gray-400">[8:45-9:00]</span>
+            <span class="block mt-2">(MUSIC FADES)</span>
+            <span class="block">VO: "If you buy this laptop, use code TECH20. (SHOW CODE)</span>
+            <span class="block mt-2">You'll save $200 - and I get a cut of it. Honest review? It's worth neither... but the savings are real."</span>
+          </div>
+          <div class="mt-5 pt-5 border-t border-gray-700">
+            <p class="text-gray-400 text-sm"><span class="font-medium">Why it works:</span> Transparent value exchange that builds trust</p>
+          </div>
+        </div>
+        
+        <!-- SAMPLE 4 -->
+        <div class="bg-gray-800 rounded-xl p-7 border border-gray-700 shadow-gradient hook-card">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-xl text-primary">Monitor Review Hook</h3>
+          </div>
+          <div class="mt-5 font-mono text-sm text-gray-200 bg-gray-900 p-5 rounded-lg">
+            <span class="block text-gray-400">[0:00-0:07]</span>
+            <span class="block">(SIDE-BY-SIDE: COLOR SHIFT VISIBLE)</span>
+            <span class="block mt-2">VO: "Your $1,200 monitor is lying to you. (ZOOM ON SHIFT) This hidden flaw is sabotaging client work without your knowledge..."</span>
+          </div>
+          <div class="mt-5 pt-5 border-t border-gray-700">
+            <p class="text-gray-400 text-sm"><span class="font-medium">Why it works:</span> Identifies a real problem tech creators care about</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IRRESISTIBLE OFFER -->
+  <section id="offer" class="py-20 px-4 bg-gradient-to-br from-primary/5 to-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Prove My Value - Zero Risk</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Send me your worst-performing video. I'll show you how to keep viewers engaged:
+      </p>
+      
+      <div class="mt-10 bg-white rounded-xl p-8 text-left shadow-gradient max-w-3xl mx-auto">
+        <ul class="space-y-5">
+          <li class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Exact Retention Leak</span>
+              <p class="mt-1 text-gray-600">Pinpoint exact moments viewers stop watching, and improve it.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">First 90 Seconds Rewritten</span>
+              <p class="mt-1 text-gray-600">Hook reconstruction to stop early exits</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div class="ml-4">
+              <span class="font-bold">Structural Recommendations</span>
+              <p class="mt-1 text-gray-600">Actionable steps to boost watch time and sponsor retention</p>
+            </div>
+          </li>
+        </ul>
+        
+        <div class="mt-8 bg-primary/10 border border-primary/20 rounded-lg p-4 inline-flex items-center">
+          <span class="h-3 w-3 bg-primary rounded-full mr-3 pulse"></span>
+          <span class="font-medium">Only 3 free slots available this week</span>
+        </div>
+        
+        <div class="mt-10">
+          <a 
+            href="mailto:sid@retentionedge.xyz?subject=Free Retention Audit - [Channel Name]&body=Video URL: [LINK TO YOUR WEAKEST VIDEO]%0A%0ASpecific concern: [OPTIONAL]" 
+            class="inline-block bg-primary hover:bg-red-700 text-white px-10 py-4 font-bold text-lg rounded-lg transition-colors shadow-lg shadow-primary/30"
+          >
+            I Want Free Analysis Now!
+          </a>
+        </div>
+        
+        <div class="mt-8 text-sm text-gray-500 max-w-md mx-auto">
+          <p>Your channel data is confidential. I sign NDAs for all audits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-4 text-center border-t">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-xl font-bold">Retention<span class="text-primary">Edge</span></div>
+      <p class="mt-4 text-gray-600">Hardware Review Script Specialist</p>
+      <p class="mt-2 text-gray-600">sid@retentionedge.xyz</p>
+      <p class="mt-8 text-sm text-gray-500">© 2025 RetentionEdge.xyz | Live Upto Expections</p>
+    </div>
+  </footer>
+
+</body>
+</html>
