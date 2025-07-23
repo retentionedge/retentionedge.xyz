@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RetentionEdge – Scripts that spark real emotion and keep your viewers watching.">
+  <meta property="og:title" content="RetentionEdge – Retention Engineering for Tech Creators">
+  <meta property="og:description" content="Boost your audience retention with proven storytelling systems.">
+  <!-- 1×1 png so there is always a valid image -->
+  <meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+  <title>RetentionEdge – Personal Portfolio</title>
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4adcb13e28.js" crossorigin="anonymous"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Scripts -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <nav class="navbar container flex items-center justify-between">
+      <a href="#top" class="logo" aria-label="RetentionEdge home">RetentionEdge</a>
+      <button id="navToggle" class="nav-toggle btn btn--outline btn--sm" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="primaryNav" class="nav-links flex gap-16" role="menu">
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#process">Process</a></li>
+        <li role="none"><a role="menuitem" href="#pain-points">Pain Points</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Free Audit</a></li>
+        <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero flex items-center" aria-label="Hero">
+    <div class="container hero__inner">
+      <h1>Your Tech Reviews Drop 41% of Viewers in First 90 Seconds!</h1>
+      <p>I write scripts that spark real emotion and lift your watch time by 23.7%.</p>
+      <div class="flex gap-16 mt-8 hero__cta">
+        <a href="#contact" class="btn btn--primary">Book Free Audit</a>
+        <a href="#about" class="btn btn--secondary">See Work</a>
+      </div>
+    </div>
+    <!-- Particle overlay (comment to disable) -->
+    <div class="hero-particles" aria-hidden="true"></div>
+  </section>
+
+  <!-- Insight Stats -->
+  <section class="stats container py-16" aria-label="Insights Stats">
+    <div class="stats__grid">
+      <div class="glass-card text-center">
+        <h3>23.7% Retention Boost</h3>
+        <span data-count="23.7">0</span>%
+      </div>
+      <div class="glass-card text-center">
+        <h3>83% Avg View Duration</h3>
+        <span data-count="83">0</span>%
+      </div>
+      <div class="glass-card text-center">
+        <h3>15.3% CTR Increase</h3>
+        <span data-count="15.3">0</span>%
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about container py-16" aria-label="About Sid">
+    <div class="glass-card about__card flex items-center gap-16">
+      <div class="avatar" aria-hidden="true"></div>
+      <div>
+        <h2>About Me</h2>
+        <p>Hey, I'm Sid – a retention engineer obsessed with storytelling psychology. After scripting 300+ tech videos, I've learned exactly where viewers drop off and why.</p>
+        <p>From hook to final CTA, every line I craft carries purpose: to move emotions and keep eyeballs glued.</p>
+        <ul class="about__links">
+          <li><a href="#process">How I work</a></li>
+          <li><a href="#contact">Request a free audit</a></li>
+          <li><a href="mailto:sid@retentionedge.com" target="_blank" rel="noopener">sid@retentionedge.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="process container py-16" aria-label="Retention Engineering Blueprint">
+    <h2 class="section-title mb-8">Retention Engineering Blueprint</h2>
+    <ul class="process__grid">
+      <li class="glass-card"><span class="step-number">1</span> Deep Channel Audit & Audience Mapping</li>
+      <li class="glass-card"><span class="step-number">2</span> Narrative Hook Engineering</li>
+      <li class="glass-card"><span class="step-number">3</span> Emotional Arc Script Writing</li>
+      <li class="glass-card"><span class="step-number">4</span> Retention Spike Placement</li>
+      <li class="glass-card"><span class="step-number">5</span> Post-Publish Performance Review</li>
+    </ul>
+  </section>
+
+  <!-- Pain Points -->
+  <section id="pain-points" class="pain container py-16" aria-label="Common Pain Points">
+    <h2 class="section-title mb-8">Why Viewers Bounce</h2>
+    <div class="pain__grid">
+      <div class="glass-card"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Generic Openings</div>
+      <div class="glass-card"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Predictable Structure</div>
+      <div class="glass-card"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Specs Over Story</div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="cta container py-16" aria-label="Free Audit Form">
+    <div class="glass-card cta__card">
+      <h2 class="mb-8">Grab Your Free Audit</h2>
+      <p class="mb-16">I'll break down your latest video and deliver 3 actionable tweaks. Zero cost, zero fluff.</p>
+      <form action="https://formspree.io/f/{your-id}" method="POST" class="cta__form">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" name="name" type="text" required class="form-control" aria-label="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="email" required class="form-control" aria-label="Your email">
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="4" required class="form-control" aria-label="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full-width">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq container py-16" aria-label="Frequently Asked Questions">
+    <h2 class="section-title mb-8">FAQ</h2>
+    <div class="faq__grid">
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">Why does retention matter? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <div class="faq-answer" hidden>Higher watch time signals value to the algorithm, boosting reach and monetization.</div>
+      </div>
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">How long is the free audit? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <div class="faq-answer" hidden>Expect a concise 3-5 minute Loom video explaining key tweaks within 48 hours.</div>
+      </div>
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">Do you write scripts for non-tech channels? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <div class="faq-answer" hidden>Yes. Story principles are universal; I've helped creators in finance, travel, and lifestyle.</div>
+      </div>
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">Revision policy? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <div class="faq-answer" hidden>Two revision rounds are included to ensure the script fits your voice.</div>
+      </div>
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">Timeline for a full script? <i class="fa-solid fa-chevron-down" aria-expanded="false"></i></button>
+        <div class="faq-answer" hidden>Typically 5 working days from kickoff call to final draft.</div>
+      </div>
+      <div class="faq-item glass-card">
+        <button class="faq-question" aria-expanded="false">Pricing? <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <div class="faq-answer" hidden>Rates vary per project scope. Book an audit for a tailored quote.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer py-16">
+    <div class="container flex justify-between items-center">
+      <p>© <span id="year"></span> RetentionEdge. All rights reserved.</p>
+      <div class="social-links flex gap-8">
+        <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        <a href="mailto:sid@retentionedge.com" aria-label="Email" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top (hidden for assistive tech only) -->
+  <a href="#top" class="sr-only">Back to top</a>
+</body>
+</html>
